@@ -1,4 +1,105 @@
-<!doctype html><html class="theme-next pisces use-motion" lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css"><meta name="keywords" content="service,"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0"><meta name="description" content="常用命令 修改文件名a.js为b.js 1mv a.js b.js  复制文件 1cp a.js. b.js ​   服务器ssh配置 [service]，在.ssh下，添加【authorized_keys】文件，复制本地pub【公钥】到【authorized_keys】中 [service]，升级【authorized_keys】文件权限：chmod 600 authorized_keys [s"><meta name="keywords" content="service"><meta property="og:type" content="article"><meta property="og:title" content="阿里服务器操作笔记"><meta property="og:url" content="http://yoursite.com/2017/08/31/21_ali_note/index.html"><meta property="og:site_name" content="Squirrel blog"><meta property="og:description" content="常用命令 修改文件名a.js为b.js 1mv a.js b.js  复制文件 1cp a.js. b.js ​   服务器ssh配置 [service]，在.ssh下，添加【authorized_keys】文件，复制本地pub【公钥】到【authorized_keys】中 [service]，升级【authorized_keys】文件权限：chmod 600 authorized_keys [s"><meta property="og:locale" content="zh-Hans"><meta property="og:image" content="http://yoursite.com/imgs/21/1.png"><meta property="og:image" content="http://yoursite.com/imgs/21/2.png"><meta property="og:image" content="http://yoursite.com/imgs/21/3.png"><meta property="og:image" content="http://yoursite.com/imgs/21/4.png"><meta property="og:image" content="http://yoursite.com/imgs/21/5.png"><meta property="og:image" content="http://yoursite.com/imgs/21/6.png"><meta property="og:image" content="http://yoursite.com/imgs/21/7.png"><meta property="og:image" content="http://yoursite.com/imgs/21/8.png"><meta property="og:image" content="http://yoursite.com/imgs/21/9.png"><meta property="og:image" content="c:/Users/kingsoft.kingsoft-PC/Desktop/post/imgs/21/10.png"><meta property="og:image" content="c:/Users/kingsoft.kingsoft-PC/Desktop/post/imgs/21/11.png"><meta property="og:image" content="c:/Users/kingsoft.kingsoft-PC/Desktop/post/imgs/21/12.png"><meta property="og:image" content="d:/7_workspace/8_hexo/source/_posts/imgs/21/10.png"><meta property="og:updated_time" content="2018-03-22T00:35:10.738Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="阿里服务器操作笔记"><meta name="twitter:description" content="常用命令 修改文件名a.js为b.js 1mv a.js b.js  复制文件 1cp a.js. b.js ​   服务器ssh配置 [service]，在.ssh下，添加【authorized_keys】文件，复制本地pub【公钥】到【authorized_keys】中 [service]，升级【authorized_keys】文件权限：chmod 600 authorized_keys [s"><meta name="twitter:image" content="http://yoursite.com/imgs/21/1.png"><script type="text/javascript" id="hexo.configurations">var NexT = window.NexT || {};
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="service," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="常用命令 修改文件名a.js为b.js 1mv a.js b.js  复制文件 1cp a.js. b.js ​   服务器ssh配置 [service]，在.ssh下，添加【authorized_keys】文件，复制本地pub【公钥】到【authorized_keys】中 [service]，升级【authorized_keys】文件权限：chmod 600 authorized_keys [s">
+<meta name="keywords" content="service">
+<meta property="og:type" content="article">
+<meta property="og:title" content="阿里服务器操作笔记">
+<meta property="og:url" content="http://yoursite.com/2017/08/31/21_ali_note/index.html">
+<meta property="og:site_name" content="Squirrel blog">
+<meta property="og:description" content="常用命令 修改文件名a.js为b.js 1mv a.js b.js  复制文件 1cp a.js. b.js ​   服务器ssh配置 [service]，在.ssh下，添加【authorized_keys】文件，复制本地pub【公钥】到【authorized_keys】中 [service]，升级【authorized_keys】文件权限：chmod 600 authorized_keys [s">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/imgs/21/1.png">
+<meta property="og:image" content="http://yoursite.com/imgs/21/2.png">
+<meta property="og:image" content="http://yoursite.com/imgs/21/3.png">
+<meta property="og:image" content="http://yoursite.com/imgs/21/4.png">
+<meta property="og:image" content="http://yoursite.com/imgs/21/5.png">
+<meta property="og:image" content="http://yoursite.com/imgs/21/6.png">
+<meta property="og:image" content="http://yoursite.com/imgs/21/7.png">
+<meta property="og:image" content="http://yoursite.com/imgs/21/8.png">
+<meta property="og:image" content="http://yoursite.com/imgs/21/9.png">
+<meta property="og:image" content="c:/Users/kingsoft.kingsoft-PC/Desktop/post/imgs/21/10.png">
+<meta property="og:image" content="c:/Users/kingsoft.kingsoft-PC/Desktop/post/imgs/21/11.png">
+<meta property="og:image" content="c:/Users/kingsoft.kingsoft-PC/Desktop/post/imgs/21/12.png">
+<meta property="og:image" content="d:/7_workspace/8_hexo/source/_posts/imgs/21/10.png">
+<meta property="og:updated_time" content="2018-03-22T00:35:10.738Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="阿里服务器操作笔记">
+<meta name="twitter:description" content="常用命令 修改文件名a.js为b.js 1mv a.js b.js  复制文件 1cp a.js. b.js ​   服务器ssh配置 [service]，在.ssh下，添加【authorized_keys】文件，复制本地pub【公钥】到【authorized_keys】中 [service]，升级【authorized_keys】文件权限：chmod 600 authorized_keys [s">
+<meta name="twitter:image" content="http://yoursite.com/imgs/21/1.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
@@ -16,6 +117,699 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
-  };</script><link rel="canonical" href="http://yoursite.com/2017/08/31/21_ali_note/"><title>阿里服务器操作笔记 | Squirrel blog</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Squirrel blog</span> <span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle"></p></div><div class="site-nav-toggle"><button><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>归档</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>标签</a></li></ul></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand" zzn="15"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-content"><link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/31/21_ali_note/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Squirrel"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.gif"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Squirrel blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline" zzn="3">阿里服务器操作笔记</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-31T08:43:18+08:00">2017-08-31</time></span></div></header><div class="post-body" itemprop="articleBody"><h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><ol><li><p>修改文件名a.js为b.js</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv a.js b.js</span><br></pre></td></tr></table></figure></li><li><p>复制文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp a.js. b.js</span><br></pre></td></tr></table></figure><p>​</p></li></ol><h1 id="服务器ssh配置"><a href="#服务器ssh配置" class="headerlink" title="服务器ssh配置"></a>服务器ssh配置</h1><ol><li>[service]，在.ssh下，添加【authorized_keys】文件，复制本地pub【公钥】到【authorized_keys】中</li><li>[service]，升级【authorized_keys】文件权限：chmod 600 authorized_keys</li><li>[service]ssh重启，sudo service ssh restart</li></ol><h1 id="查看硬盘"><a href="#查看硬盘" class="headerlink" title="查看硬盘"></a>查看硬盘</h1><ol><li>查看挂载盘：fdisk -l</li><li>查看硬盘使用：df -h</li></ol><h1 id="添加新用户管理"><a href="#添加新用户管理" class="headerlink" title="添加新用户管理"></a>添加新用户管理</h1><ol><li><p>添加新用户：adduser squirrel_manager</p></li><li><p>为新添加的用户授权：</p><p>gpasswd -a squirrel_manager sudo</p><p>sudo visudo，然后添加内容，如下<br><img src="/imgs\21\1.png" alt="1"></p></li><li><p>查看文件内容：cat file.name</p></li><li><p>sudo vi /etc/ssh/sshd_config</p></li><li><p>修改端口</p><p><img src="/imgs\21\2.png" alt="2"></p><p><img src="/imgs\21\3.png" alt="3"></p></li><li><p>ssh带端口号： ssh -p 22 <a href="mailto:squirrel_manager@119.23.66.112" target="_blank" rel="noopener">squirrel_manager@119.23.66.112</a></p></li><li><p>设置只能用ssh登录：</p><p>sudo vi /etc/ssh/sshd_config</p><p><img src="/imgs\21\4.png" alt="4"></p></li></ol><h1 id="iptables"><a href="#iptables" class="headerlink" title="iptables"></a>iptables</h1><ol><li><p>更新ubuntu：sudo apt-get update &amp;&amp; sudo apt-get upgrade</p></li><li><p>清除iptables规则：sudo iptables -F</p></li><li><p>创建iptables配置文件：sudo vi /etc/iptables.up.rules</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">*filter</span><br><span class="line"></span><br><span class="line"># allow all connections</span><br><span class="line">-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</span><br><span class="line"></span><br><span class="line"># allow out traffic</span><br><span class="line">-A OUTPUT -j ACCEPT</span><br><span class="line"></span><br><span class="line"># allow http https</span><br><span class="line">-A INPUT -p tcp --dport 443 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp --dport 80 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp --dport 8081 -j ACCEPT</span><br><span class="line"></span><br><span class="line"># all ssh port login</span><br><span class="line">-A INPUT -p tcp -m state --state NEW --dport 22 -j ACCEPT</span><br><span class="line"></span><br><span class="line"># ping</span><br><span class="line">-A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT</span><br><span class="line"></span><br><span class="line"># mongodb connect</span><br><span class="line">-A INPUT -s 127.0.0.1 -p tcp --destination-port 27017 -m state --state NEW,ESTABLISHED -j ACCEPT</span><br><span class="line">-A OUTPUT -d 127.0.0.1 -p tcp --source-port 27017 -m state --state ESTABLISHED -j ACCEPT</span><br><span class="line"></span><br><span class="line"># log denied calls</span><br><span class="line">-A INPUT -m limit --limit 5/min -j LOG --log-prefix &quot;iptables denied:&quot; --log-level 7</span><br><span class="line"></span><br><span class="line"># drop incoming sensitive connections</span><br><span class="line">-A INPUT -p tcp --dport 80 -i eth0 -m state --state NEW -m recent --set</span><br><span class="line">-A INPUT -p tcp --dport 80 -i eth0 -m state --state NEW -m recent --update --seconds 60 --hitcount 150 -j DROP</span><br><span class="line"></span><br><span class="line"># reject all other inbound</span><br><span class="line">-A INPUT -j REJECT</span><br><span class="line">-A FORWARD -j REJECT</span><br><span class="line"></span><br><span class="line">COMMIT</span><br></pre></td></tr></table></figure></li><li><p>载入iptables配置文件：sudo iptables-restore &lt; /etc/iptables.up.rules</p></li><li><p>查看防火墙是否启动：sudo ufw status</p></li><li><p>启动防火墙：sudo ufw enable</p></li><li><p>创建自启脚本：sudo vi /etc/network/if-up.d/iptables</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line">sudo iptables-restore &lt; /etc/iptables.up.rules</span><br></pre></td></tr></table></figure></li><li><p>给自启脚本升级权限： sudo chmod +x /etc/network/if-up.d/iptables</p></li></ol><p>#fail2ban</p><ol><li><p>安装fail2ban：sudo apt-get install fail2ban</p></li><li><p>打开配置文件：sudo vi /etc/fail2ban/jail.conf</p><p><img src="/imgs\21\5.png" alt="5"></p><p><img src="/imgs\21\6.png" alt="6"></p><p><img src="/imgs\21\7.png" alt="7"></p></li><li><p>查看fail2ban是否运行：sudo service fail2ban status</p></li><li><p>停止fail2ban：sudo service fail2ban stop</p></li><li><p>启动fail2ban：sudo service fail2ban start</p></li></ol><p>#安装nodejs</p><ol><li><p>安装基础工具：sudo apt-get install vim openssl build-essential libssl-dev wget curl git</p></li><li><p>安装nvm管理node版本</p><p><img src="/imgs\21\8.png" alt="8"></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</span><br></pre></td></tr></table></figure><p>安装完nvm后，重新打开一个新的连接窗口</p></li><li><p>nvm安装node：nvm install v6.9.5</p></li><li><p>nvm选择使用的node版本：nvm use v6.9.5</p></li><li><p>nvm设置默认使用的node版本：nvm alias default v6.9.5</p></li><li><p>查看node版本：node -v</p></li><li><p>更新到最新的npm版本：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm --registry=https://registry.npm.taobao.org install -g npm</span><br></pre></td></tr></table></figure></li><li><p>查看npm版本：npm -v</p></li><li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf &amp;&amp; sudo sysctl -p</span><br></pre></td></tr></table></figure></li><li><p>安装基础工具</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm --registry=https://registry.npm.taobao.org install pm2 webpack gulp grunt-cli -g</span><br></pre></td></tr></table></figure></li></ol><h1 id="pm2"><a href="#pm2" class="headerlink" title="pm2"></a>pm2</h1><ol><li>pm2启动：pm2 start app.js</li><li>pm2查看某个应用的详细信息：pm2 show app</li><li>pm2查看当前应用的列表：pm2 list</li></ol><h1 id="删除apache2"><a href="#删除apache2" class="headerlink" title="删除apache2"></a>删除apache2</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. sudo service apache2 stop</span><br><span class="line">2. update-rc.d -f apache2 remove</span><br><span class="line">3. sudo apt-get remove apache2</span><br></pre></td></tr></table></figure><h1 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h1><ol><li><p>安装nginx</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nginx</span><br></pre></td></tr></table></figure></li><li><p>查看nginx版本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -v</span><br></pre></td></tr></table></figure></li><li><p>创建配置文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/nginx/conf.d blog-com-8081.conf</span><br></pre></td></tr></table></figure></li><li><p>测试nginx配置文件编写内容是否正确</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nginx -t</span><br></pre></td></tr></table></figure></li><li><p>重启nginx</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nginx -s reload</span><br></pre></td></tr></table></figure></li><li><p>隐藏服务器nginx版本信息</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/nginx/nginx.conf</span><br><span class="line"># 开启server_tokens off;</span><br><span class="line"># 重启nginx服务</span><br><span class="line">sudo service nginx reload</span><br></pre></td></tr></table></figure><p><img src="/imgs\21\9.png" alt="9"></p></li></ol><h1 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h1><ol><li><p>官方安装参考文档：<a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/" target="_blank" rel="noopener">https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/</a></p></li><li><p>安装步骤</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Import the public key used by the package management system.</span><br><span class="line">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6</span><br><span class="line"></span><br><span class="line"># Create a list file for MongoDB.</span><br><span class="line">echo &quot;deb [ arch=amd64 ] http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse&quot; | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list</span><br><span class="line"></span><br><span class="line"># Reload local package database.</span><br><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line"># Install the MongoDB packages.</span><br><span class="line">sudo apt-get install -y mongodb-org</span><br></pre></td></tr></table></figure></li><li><p>如果遇到安装错误的处理方法</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 屏蔽掉阿里云的安装源,然后把proxy的那行注释掉</span><br><span class="line">sudo vi /etc/apt/apt.conf</span><br></pre></td></tr></table></figure></li><li><p>如果安装太慢</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/apt/sources.list.d/mongodb-org-3.4.list</span><br></pre></td></tr></table></figure><p>打开后显示的内容：</p><p><img src="C:\Users\kingsoft.kingsoft-PC\Desktop\post\imgs\21\10.png" alt="10"></p><p>编辑后的内容：</p><p><img src="C:\Users\kingsoft.kingsoft-PC\Desktop\post\imgs\21\11.png" alt="11"></p></li><li><p>开启mongodb数据库</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service mongod start</span><br></pre></td></tr></table></figure></li><li><p>查看mongodb启动日志文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /var/log/mongodb/mongod.log</span><br></pre></td></tr></table></figure></li><li><p>重启mongodb数据库</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service mongod restart</span><br></pre></td></tr></table></figure></li><li><p>修改mongodb的默认端口，然后修改iptables</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/mongod.conf</span><br></pre></td></tr></table></figure><p><img src="C:\Users\kingsoft.kingsoft-PC\Desktop\post\imgs\21\12.png" alt="12"></p></li><li><p>连接mongodb</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 指定端口</span><br><span class="line">mongo --port 27018</span><br><span class="line"></span><br><span class="line"># 或指定路径</span><br><span class="line">mongod --dbpath=F:\db --port 27018</span><br></pre></td></tr></table></figure></li><li><p>导出mongodb数据</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"># 导出mongodb数据</span><br><span class="line">mongodump -h 127.0.0.1:27018 -d blog -o blog_backup</span><br><span class="line"></span><br><span class="line"># tar压缩文件</span><br><span class="line">tar zcvf blog_backup.tar.gz blog_backup</span><br><span class="line"></span><br><span class="line"># scp上传文件到服务器</span><br><span class="line">scp -P 22 blog_backup.tar.gz squirrel_manager@119.23.66.112:/home/squirrel_manager/dbback</span><br><span class="line"></span><br><span class="line"># 服务器解压tar包</span><br><span class="line">tar xvf blog_backup.tar.gz</span><br><span class="line"></span><br><span class="line"># 服务器导出mongodb数据库</span><br><span class="line">mongorestore --host 127.0.0.1:27108 -d blog /home/squirrel_manager/blog_backup/blog</span><br><span class="line"></span><br><span class="line">##################################</span><br><span class="line"></span><br><span class="line"># 导出单表</span><br><span class="line">mongoexport -d blog -c users -q &quot;&#123;&apos;username&apos;: &#123;&apos;$ne&apos;: null&#125;&#125;&quot; -o ./export/users.json --host 127.0.0.01:27018</span><br><span class="line"># 服务器改单表数据</span><br><span class="line">mongoimport --host 127.0.0.1:27018 -d blog -c users /home/squirrel_manager/dbback/users.json</span><br><span class="line"></span><br><span class="line">##################################</span><br><span class="line"></span><br><span class="line"># 删除整个数据库</span><br><span class="line">mongo --host 127.0.0.1:27018 blog --eval &quot;db.dropDatabase()&quot;</span><br></pre></td></tr></table></figure></li><li><p>服务器增加文件夹权限</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chomd 777 file</span><br></pre></td></tr></table></figure></li></ol><h1 id="本地pm2配置"><a href="#本地pm2配置" class="headerlink" title="本地pm2配置"></a>本地pm2配置</h1><ol><li><p>项目路径下，添加文件【ecosystem.json】</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"># ecosystem.json</span><br><span class="line">&#123;</span><br><span class="line">  &quot;apps&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;name&quot;: &quot;Website&quot;,</span><br><span class="line">      &quot;script&quot;: &quot;app.js&quot;,</span><br><span class="line">      &quot;env&quot;: &#123;</span><br><span class="line">        &quot;COMMON_VARIABLE&quot;: &quot;true&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">      &quot;env_production&quot; : &#123;</span><br><span class="line">        &quot;NODE_ENV&quot;: &quot;production&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  &quot;deploy&quot;: &#123;</span><br><span class="line">    &quot;production&quot;: &#123;</span><br><span class="line">      &quot;user&quot;: &quot;squirrel_manager&quot;,</span><br><span class="line">      &quot;host&quot;: [&quot;119.23.66.112&quot;],</span><br><span class="line">      &quot;ref&quot;: &quot;origin/master&quot;,</span><br><span class="line">      &quot;port&quot;: &quot;33876&quot;,</span><br><span class="line">      &quot;repo&quot;: &quot;git@github.com:GreenMashimaro/node_blog.git&quot;,</span><br><span class="line">      &quot;path&quot;: &quot;/www/website/production&quot;,</span><br><span class="line">      &quot;ssh_options&quot;: &quot;StrictHostKeyChecking=no&quot;,</span><br><span class="line">      &quot;post-deploy&quot;: &quot;npm install --registry=https://registry.npm.taobao.org &amp;&amp; pm2 startOrRestart ecosystem.json --env production&quot;,</span><br><span class="line">      &quot;env&quot;: &#123;</span><br><span class="line">        &quot;NODE_ENV&quot;: &quot;production&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>部署命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 远程服务器下载文件</span><br><span class="line">pm2 deploy ecosystem.json production setup</span><br><span class="line"></span><br><span class="line"># 远程服务器启动nodejs</span><br><span class="line">pm2 deploy ecosystem.json production</span><br></pre></td></tr></table></figure></li><li><p>开启服务器可交互脚本</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 进入文件，修改注释掉几行代码，然后重新载入</span><br><span class="line">sudo vi .bashrc</span><br><span class="line">source .bashrc</span><br></pre></td></tr></table></figure><p><img src="D:\7_workspace\8_hexo\source\_posts\imgs\21\10.png" alt="10"></p><p>​</p></li></ol></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-tags"><a href="/tags/service/" rel="tag"># service</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2017/08/21/20_webapck_alias/" rel="next" title="webapck_alias"><i class="fa fa-chevron-left"></i> webapck_alias</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"><a href="/2017/09/16/22_multiple_ssh/" rel="prev" title="multiple_ssh">multiple_ssh <i class="fa fa-chevron-right"></i></a></div></div></footer></div></article><div class="post-spread"></div></div></div><div class="comments" id="comments" style="display: none" zzn="zzn1"></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">文章目录</li><li class="sidebar-nav-overview" data-target="site-overview">站点概览</li></ul><section class="site-overview sidebar-panel"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="Squirrel"><p class="site-author-name" itemprop="name">Squirrel</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives"><span class="site-state-item-count">44</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/index.html"><span class="site-state-item-count">34</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="links-of-author motion-element"></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常用命令"><span class="nav-number">1.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#服务器ssh配置"><span class="nav-number">2.</span> <span class="nav-text">服务器ssh配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看硬盘"><span class="nav-number">3.</span> <span class="nav-text">查看硬盘</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加新用户管理"><span class="nav-number">4.</span> <span class="nav-text">添加新用户管理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#iptables"><span class="nav-number">5.</span> <span class="nav-text">iptables</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pm2"><span class="nav-number">6.</span> <span class="nav-text">pm2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除apache2"><span class="nav-number">7.</span> <span class="nav-text">删除apache2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nginx"><span class="nav-number">8.</span> <span class="nav-text">nginx</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装mongodb"><span class="nav-number">9.</span> <span class="nav-text">安装mongodb</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地pm2配置"><span class="nav-number">10.</span> <span class="nav-text">本地pm2配置</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; <span itemprop="copyrightYear">2018</span> <span class="with-love"><i class="fa fa-heart"></i> </span><span class="author" itemprop="copyrightHolder">Squirrel</span></div><div class="powered-by" style="display: none;" zzn="20">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div><div class="theme-info" style="display: none;" zzn="21">主题 - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script type="text/javascript">if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/08/31/21_ali_note/"/>
+
+
+
+
+
+  <title> 阿里服务器操作笔记 | Squirrel blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Squirrel blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand" zzn="15">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <div class="post-content">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/31/21_ali_note/">
+
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="Squirrel">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="/images/avatar.gif">
+      </span>
+
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="Squirrel blog">
+      </span>
+
+      
+        <header class="post-header">
+
+          
+          
+            <h1 class="post-title" itemprop="name headline" zzn="3">
+              
+              
+                
+                  阿里服务器操作笔记
+                
+              
+            </h1>
+          
+
+          <div class="post-meta">
+            <span class="post-time">
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">发表于</span>
+                
+                <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-31T08:43:18+08:00">
+                  2017-08-31
+                </time>
+              
+
+              
+
+              
+            </span>
+
+            
+
+            
+              
+            
+
+            
+            
+
+            
+
+            
+
+            
+
+          </div>
+        </header>
+      
+
+
+      <div class="post-body" itemprop="articleBody">
+
+        
+        
+
+        
+          <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><ol>
+<li><p>修改文件名a.js为b.js</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv a.js b.js</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>复制文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp a.js. b.js</span><br></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ol>
+<h1 id="服务器ssh配置"><a href="#服务器ssh配置" class="headerlink" title="服务器ssh配置"></a>服务器ssh配置</h1><ol>
+<li>[service]，在.ssh下，添加【authorized_keys】文件，复制本地pub【公钥】到【authorized_keys】中</li>
+<li>[service]，升级【authorized_keys】文件权限：chmod 600 authorized_keys</li>
+<li>[service]ssh重启，sudo service ssh restart</li>
+</ol>
+<h1 id="查看硬盘"><a href="#查看硬盘" class="headerlink" title="查看硬盘"></a>查看硬盘</h1><ol>
+<li>查看挂载盘：fdisk -l</li>
+<li>查看硬盘使用：df -h</li>
+</ol>
+<h1 id="添加新用户管理"><a href="#添加新用户管理" class="headerlink" title="添加新用户管理"></a>添加新用户管理</h1><ol>
+<li><p>添加新用户：adduser squirrel_manager</p>
+</li>
+<li><p>为新添加的用户授权：</p>
+<p>gpasswd -a squirrel_manager sudo</p>
+<p>sudo visudo，然后添加内容，如下<br><img src="/imgs\21\1.png" alt="1"></p>
+</li>
+<li><p>查看文件内容：cat file.name</p>
+</li>
+<li><p>sudo vi /etc/ssh/sshd_config</p>
+</li>
+<li><p>修改端口</p>
+<p><img src="/imgs\21\2.png" alt="2"></p>
+<p><img src="/imgs\21\3.png" alt="3"></p>
+</li>
+<li><p>ssh带端口号： ssh -p 22 <a href="mailto:squirrel_manager@119.23.66.112" target="_blank" rel="noopener">squirrel_manager@119.23.66.112</a></p>
+</li>
+<li><p>设置只能用ssh登录：</p>
+<p>sudo vi /etc/ssh/sshd_config</p>
+<p><img src="/imgs\21\4.png" alt="4"></p>
+</li>
+</ol>
+<h1 id="iptables"><a href="#iptables" class="headerlink" title="iptables"></a>iptables</h1><ol>
+<li><p>更新ubuntu：sudo apt-get update &amp;&amp; sudo apt-get upgrade</p>
+</li>
+<li><p>清除iptables规则：sudo iptables -F</p>
+</li>
+<li><p>创建iptables配置文件：sudo vi /etc/iptables.up.rules</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">*filter</span><br><span class="line"></span><br><span class="line"># allow all connections</span><br><span class="line">-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</span><br><span class="line"></span><br><span class="line"># allow out traffic</span><br><span class="line">-A OUTPUT -j ACCEPT</span><br><span class="line"></span><br><span class="line"># allow http https</span><br><span class="line">-A INPUT -p tcp --dport 443 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp --dport 80 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp --dport 8081 -j ACCEPT</span><br><span class="line"></span><br><span class="line"># all ssh port login</span><br><span class="line">-A INPUT -p tcp -m state --state NEW --dport 22 -j ACCEPT</span><br><span class="line"></span><br><span class="line"># ping</span><br><span class="line">-A INPUT -p icmp -m icmp --icmp-type 8 -j ACCEPT</span><br><span class="line"></span><br><span class="line"># mongodb connect</span><br><span class="line">-A INPUT -s 127.0.0.1 -p tcp --destination-port 27017 -m state --state NEW,ESTABLISHED -j ACCEPT</span><br><span class="line">-A OUTPUT -d 127.0.0.1 -p tcp --source-port 27017 -m state --state ESTABLISHED -j ACCEPT</span><br><span class="line"></span><br><span class="line"># log denied calls</span><br><span class="line">-A INPUT -m limit --limit 5/min -j LOG --log-prefix &quot;iptables denied:&quot; --log-level 7</span><br><span class="line"></span><br><span class="line"># drop incoming sensitive connections</span><br><span class="line">-A INPUT -p tcp --dport 80 -i eth0 -m state --state NEW -m recent --set</span><br><span class="line">-A INPUT -p tcp --dport 80 -i eth0 -m state --state NEW -m recent --update --seconds 60 --hitcount 150 -j DROP</span><br><span class="line"></span><br><span class="line"># reject all other inbound</span><br><span class="line">-A INPUT -j REJECT</span><br><span class="line">-A FORWARD -j REJECT</span><br><span class="line"></span><br><span class="line">COMMIT</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>载入iptables配置文件：sudo iptables-restore &lt; /etc/iptables.up.rules</p>
+</li>
+<li><p>查看防火墙是否启动：sudo ufw status</p>
+</li>
+<li><p>启动防火墙：sudo ufw enable</p>
+</li>
+<li><p>创建自启脚本：sudo vi /etc/network/if-up.d/iptables</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/sh</span><br><span class="line">sudo iptables-restore &lt; /etc/iptables.up.rules</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>给自启脚本升级权限： sudo chmod +x /etc/network/if-up.d/iptables</p>
+</li>
+</ol>
+<p>#fail2ban</p>
+<ol>
+<li><p>安装fail2ban：sudo apt-get install fail2ban</p>
+</li>
+<li><p>打开配置文件：sudo vi /etc/fail2ban/jail.conf</p>
+<p><img src="/imgs\21\5.png" alt="5"></p>
+<p><img src="/imgs\21\6.png" alt="6"></p>
+<p><img src="/imgs\21\7.png" alt="7"></p>
+</li>
+<li><p>查看fail2ban是否运行：sudo service fail2ban status</p>
+</li>
+<li><p>停止fail2ban：sudo service fail2ban stop</p>
+</li>
+<li><p>启动fail2ban：sudo service fail2ban start</p>
+</li>
+</ol>
+<p>#安装nodejs</p>
+<ol>
+<li><p>安装基础工具：sudo apt-get install vim openssl build-essential libssl-dev wget curl git</p>
+</li>
+<li><p>安装nvm管理node版本</p>
+<p><img src="/imgs\21\8.png" alt="8"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash</span><br></pre></td></tr></table></figure>
+<p>安装完nvm后，重新打开一个新的连接窗口</p>
+</li>
+<li><p>nvm安装node：nvm install v6.9.5</p>
+</li>
+<li><p>nvm选择使用的node版本：nvm use v6.9.5</p>
+</li>
+<li><p>nvm设置默认使用的node版本：nvm alias default v6.9.5</p>
+</li>
+<li><p>查看node版本：node -v</p>
+</li>
+<li><p>更新到最新的npm版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm --registry=https://registry.npm.taobao.org install -g npm</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看npm版本：npm -v</p>
+</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf &amp;&amp; sudo sysctl -p</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装基础工具</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm --registry=https://registry.npm.taobao.org install pm2 webpack gulp grunt-cli -g</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="pm2"><a href="#pm2" class="headerlink" title="pm2"></a>pm2</h1><ol>
+<li>pm2启动：pm2 start app.js</li>
+<li>pm2查看某个应用的详细信息：pm2 show app</li>
+<li>pm2查看当前应用的列表：pm2 list</li>
+</ol>
+<h1 id="删除apache2"><a href="#删除apache2" class="headerlink" title="删除apache2"></a>删除apache2</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. sudo service apache2 stop</span><br><span class="line">2. update-rc.d -f apache2 remove</span><br><span class="line">3. sudo apt-get remove apache2</span><br></pre></td></tr></table></figure>
+<h1 id="nginx"><a href="#nginx" class="headerlink" title="nginx"></a>nginx</h1><ol>
+<li><p>安装nginx</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install nginx</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看nginx版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nginx -v</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/nginx/conf.d blog-com-8081.conf</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>测试nginx配置文件编写内容是否正确</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nginx -t</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启nginx</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nginx -s reload</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>隐藏服务器nginx版本信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/nginx/nginx.conf</span><br><span class="line"># 开启server_tokens off;</span><br><span class="line"># 重启nginx服务</span><br><span class="line">sudo service nginx reload</span><br></pre></td></tr></table></figure>
+<p><img src="/imgs\21\9.png" alt="9"></p>
+</li>
+</ol>
+<h1 id="安装mongodb"><a href="#安装mongodb" class="headerlink" title="安装mongodb"></a>安装mongodb</h1><ol>
+<li><p>官方安装参考文档：<a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/" target="_blank" rel="noopener">https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/</a></p>
+</li>
+<li><p>安装步骤</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># Import the public key used by the package management system.</span><br><span class="line">sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6</span><br><span class="line"></span><br><span class="line"># Create a list file for MongoDB.</span><br><span class="line">echo &quot;deb [ arch=amd64 ] http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.4 multiverse&quot; | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list</span><br><span class="line"></span><br><span class="line"># Reload local package database.</span><br><span class="line">sudo apt-get update</span><br><span class="line"></span><br><span class="line"># Install the MongoDB packages.</span><br><span class="line">sudo apt-get install -y mongodb-org</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果遇到安装错误的处理方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 屏蔽掉阿里云的安装源,然后把proxy的那行注释掉</span><br><span class="line">sudo vi /etc/apt/apt.conf</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>如果安装太慢</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/apt/sources.list.d/mongodb-org-3.4.list</span><br></pre></td></tr></table></figure>
+<p>打开后显示的内容：</p>
+<p><img src="C:\Users\kingsoft.kingsoft-PC\Desktop\post\imgs\21\10.png" alt="10"></p>
+<p>编辑后的内容：</p>
+<p><img src="C:\Users\kingsoft.kingsoft-PC\Desktop\post\imgs\21\11.png" alt="11"></p>
+</li>
+<li><p>开启mongodb数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service mongod start</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看mongodb启动日志文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /var/log/mongodb/mongod.log</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>重启mongodb数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service mongod restart</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改mongodb的默认端口，然后修改iptables</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/mongod.conf</span><br></pre></td></tr></table></figure>
+<p> <img src="C:\Users\kingsoft.kingsoft-PC\Desktop\post\imgs\21\12.png" alt="12"></p>
+</li>
+<li><p>连接mongodb</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 指定端口</span><br><span class="line">mongo --port 27018</span><br><span class="line"></span><br><span class="line"># 或指定路径</span><br><span class="line">mongod --dbpath=F:\db --port 27018</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>导出mongodb数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"># 导出mongodb数据</span><br><span class="line">mongodump -h 127.0.0.1:27018 -d blog -o blog_backup</span><br><span class="line"></span><br><span class="line"># tar压缩文件</span><br><span class="line">tar zcvf blog_backup.tar.gz blog_backup</span><br><span class="line"></span><br><span class="line"># scp上传文件到服务器</span><br><span class="line">scp -P 22 blog_backup.tar.gz squirrel_manager@119.23.66.112:/home/squirrel_manager/dbback</span><br><span class="line"></span><br><span class="line"># 服务器解压tar包</span><br><span class="line">tar xvf blog_backup.tar.gz</span><br><span class="line"></span><br><span class="line"># 服务器导出mongodb数据库</span><br><span class="line">mongorestore --host 127.0.0.1:27108 -d blog /home/squirrel_manager/blog_backup/blog</span><br><span class="line"></span><br><span class="line">##################################</span><br><span class="line"></span><br><span class="line"># 导出单表</span><br><span class="line">mongoexport -d blog -c users -q &quot;&#123;&apos;username&apos;: &#123;&apos;$ne&apos;: null&#125;&#125;&quot; -o ./export/users.json --host 127.0.0.01:27018</span><br><span class="line"># 服务器改单表数据</span><br><span class="line">mongoimport --host 127.0.0.1:27018 -d blog -c users /home/squirrel_manager/dbback/users.json</span><br><span class="line"></span><br><span class="line">##################################</span><br><span class="line"></span><br><span class="line"># 删除整个数据库</span><br><span class="line">mongo --host 127.0.0.1:27018 blog --eval &quot;db.dropDatabase()&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>服务器增加文件夹权限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chomd 777 file</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="本地pm2配置"><a href="#本地pm2配置" class="headerlink" title="本地pm2配置"></a>本地pm2配置</h1><ol>
+<li><p>项目路径下，添加文件【ecosystem.json】</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"># ecosystem.json</span><br><span class="line">&#123;</span><br><span class="line">  &quot;apps&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;name&quot;: &quot;Website&quot;,</span><br><span class="line">      &quot;script&quot;: &quot;app.js&quot;,</span><br><span class="line">      &quot;env&quot;: &#123;</span><br><span class="line">        &quot;COMMON_VARIABLE&quot;: &quot;true&quot;</span><br><span class="line">      &#125;,</span><br><span class="line">      &quot;env_production&quot; : &#123;</span><br><span class="line">        &quot;NODE_ENV&quot;: &quot;production&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  &quot;deploy&quot;: &#123;</span><br><span class="line">    &quot;production&quot;: &#123;</span><br><span class="line">      &quot;user&quot;: &quot;squirrel_manager&quot;,</span><br><span class="line">      &quot;host&quot;: [&quot;119.23.66.112&quot;],</span><br><span class="line">      &quot;ref&quot;: &quot;origin/master&quot;,</span><br><span class="line">      &quot;port&quot;: &quot;33876&quot;,</span><br><span class="line">      &quot;repo&quot;: &quot;git@github.com:GreenMashimaro/node_blog.git&quot;,</span><br><span class="line">      &quot;path&quot;: &quot;/www/website/production&quot;,</span><br><span class="line">      &quot;ssh_options&quot;: &quot;StrictHostKeyChecking=no&quot;,</span><br><span class="line">      &quot;post-deploy&quot;: &quot;npm install --registry=https://registry.npm.taobao.org &amp;&amp; pm2 startOrRestart ecosystem.json --env production&quot;,</span><br><span class="line">      &quot;env&quot;: &#123;</span><br><span class="line">        &quot;NODE_ENV&quot;: &quot;production&quot;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>部署命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 远程服务器下载文件</span><br><span class="line">pm2 deploy ecosystem.json production setup</span><br><span class="line"></span><br><span class="line"># 远程服务器启动nodejs</span><br><span class="line">pm2 deploy ecosystem.json production</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启服务器可交互脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 进入文件，修改注释掉几行代码，然后重新载入</span><br><span class="line">sudo vi .bashrc</span><br><span class="line">source .bashrc</span><br></pre></td></tr></table></figure>
+<p><img src="D:\7_workspace\8_hexo\source\_posts\imgs\21\10.png" alt="10"></p>
+<p>​</p>
+</li>
+</ol>
+
+        
+      </div>
+
+      <div>
+        
+          
+
+        
+      </div>
+
+      <div>
+        
+          
+
+        
+      </div>
+
+      <div>
+        
+          
+
+        
+      </div>
+
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/service/" rel="tag"># service</a>
+            
+          </div>
+        
+
+        
+          
+        
+
+        
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2017/08/21/20_webapck_alias/" rel="next" title="webapck_alias">
+                  <i class="fa fa-chevron-left"></i> webapck_alias
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2017/09/16/22_multiple_ssh/" rel="prev" title="multiple_ssh">
+                  multiple_ssh <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+
+        
+        
+      </footer>
+    </div>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments" style="display: none" zzn="zzn1">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Squirrel" />
+          <p class="site-author-name" itemprop="name">Squirrel</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">46</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">36</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常用命令"><span class="nav-number">1.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#服务器ssh配置"><span class="nav-number">2.</span> <span class="nav-text">服务器ssh配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看硬盘"><span class="nav-number">3.</span> <span class="nav-text">查看硬盘</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#添加新用户管理"><span class="nav-number">4.</span> <span class="nav-text">添加新用户管理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#iptables"><span class="nav-number">5.</span> <span class="nav-text">iptables</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pm2"><span class="nav-number">6.</span> <span class="nav-text">pm2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除apache2"><span class="nav-number">7.</span> <span class="nav-text">删除apache2</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#nginx"><span class="nav-number">8.</span> <span class="nav-text">nginx</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装mongodb"><span class="nav-number">9.</span> <span class="nav-text">安装mongodb</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地pm2配置"><span class="nav-number">10.</span> <span class="nav-text">本地pm2配置</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Squirrel</span>
+</div>
+
+
+<div class="powered-by" style="display: none;" zzn="20">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info" style="display: none;" zzn="21">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
-  }</script><script type="text/javascript" src="/js/main.min.js"></script></body></html>
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/js/main.min.js"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
