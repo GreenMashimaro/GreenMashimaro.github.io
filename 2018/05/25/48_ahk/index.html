@@ -1,0 +1,595 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="ahk," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="12345678910111213141516171819$^Right::	Send &amp;#123;End&amp;#125;Return$^Left::	Send &amp;#123;Home&amp;#125;Return$^+Left::	Send &amp;#123;Shift down&amp;#125;&amp;#123;Home&amp;#125;&amp;#123;Shift up&amp;#125;Return$^+Right::	Send &amp;#12">
+<meta name="keywords" content="ahk">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ahk">
+<meta property="og:url" content="http://yoursite.com/2018/05/25/48_ahk/index.html">
+<meta property="og:site_name" content="Squirrel blog">
+<meta property="og:description" content="12345678910111213141516171819$^Right::	Send &amp;#123;End&amp;#125;Return$^Left::	Send &amp;#123;Home&amp;#125;Return$^+Left::	Send &amp;#123;Shift down&amp;#125;&amp;#123;Home&amp;#125;&amp;#123;Shift up&amp;#125;Return$^+Right::	Send &amp;#12">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-25T01:47:10.721Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ahk">
+<meta name="twitter:description" content="12345678910111213141516171819$^Right::	Send &amp;#123;End&amp;#125;Return$^Left::	Send &amp;#123;Home&amp;#125;Return$^+Left::	Send &amp;#123;Shift down&amp;#125;&amp;#123;Home&amp;#125;&amp;#123;Shift up&amp;#125;Return$^+Right::	Send &amp;#12">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/05/25/48_ahk/"/>
+
+
+
+
+
+  <title> ahk | Squirrel blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Squirrel blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand" zzn="15">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <div class="post-content">
+      <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/25/48_ahk/">
+
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <meta itemprop="name" content="Squirrel">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="/images/avatar.gif">
+      </span>
+
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="Squirrel blog">
+      </span>
+
+      
+        <header class="post-header">
+
+          
+          
+            <h1 class="post-title" itemprop="name headline" zzn="3">
+              
+              
+                
+                  ahk
+                
+              
+            </h1>
+          
+
+          <div class="post-meta">
+            <span class="post-time">
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">发表于</span>
+                
+                <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-25T09:45:55+08:00">
+                  2018-05-25
+                </time>
+              
+
+              
+
+              
+            </span>
+
+            
+
+            
+              
+            
+
+            
+            
+
+            
+
+            
+
+            
+
+          </div>
+        </header>
+      
+
+
+      <div class="post-body" itemprop="articleBody">
+
+        
+        
+
+        
+          <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">$^Right::</span><br><span class="line">	Send &#123;End&#125;</span><br><span class="line">Return</span><br><span class="line"></span><br><span class="line">$^Left::</span><br><span class="line">	Send &#123;Home&#125;</span><br><span class="line">Return</span><br><span class="line"></span><br><span class="line">$^+Left::</span><br><span class="line">	Send &#123;Shift down&#125;&#123;Home&#125;&#123;Shift up&#125;</span><br><span class="line">Return</span><br><span class="line"></span><br><span class="line">$^+Right::</span><br><span class="line">	Send &#123;Shift down&#125;&#123;End&#125;&#123;Shift up&#125;</span><br><span class="line">Return</span><br><span class="line"></span><br><span class="line">$^r::</span><br><span class="line">	Send #r</span><br><span class="line">Return</span><br></pre></td></tr></table></figure>
+<p>ctrl和alt调换<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">; NEEDS &apos;*&apos; because LCtrl key-repeat is otherwise interpreted as ALT+LCtrl.</span><br><span class="line">*LCtrl::</span><br><span class="line">    CtrlTabbed := false</span><br><span class="line">    Hotkey, *Tab, CtrlTab, On   ; Begin Ctrl+Tab (and release Alt) when we press Tab.</span><br><span class="line">    Send &#123;Alt Down&#125;             ; Press Alt (LCtrl::Alt)</span><br><span class="line">    KeyWait, LCtrl</span><br><span class="line">    if CtrlTabbed</span><br><span class="line">        Send &#123;Ctrl Up&#125;          ; Release Ctrl after Ctrl+Tabbing.</span><br><span class="line">    else</span><br><span class="line">        Send &#123;Alt Up&#125;           ; Release Alt (LCtrl::Alt)</span><br><span class="line">    Hotkey, *Tab, CtrlTab, Off</span><br><span class="line">return</span><br><span class="line"></span><br><span class="line">CtrlTab:</span><br><span class="line">    if (!CtrlTabbed) &#123;</span><br><span class="line">        Send &#123;Alt Up&#125;           ; Release Alt now.</span><br><span class="line">        Send &#123;Ctrl Down&#125;        ; Press down Ctrl.</span><br><span class="line">        CtrlTabbed := true      ; Set a flag so we know to release Ctrl instead of Alt.</span><br><span class="line">    &#125;</span><br><span class="line">    Send &#123;Blind&#125;&#123;Tab&#125;           ; Press Tab without releasing any modifiers.</span><br><span class="line">return</span><br><span class="line"></span><br><span class="line">; If you want LCtrl and LAlt to both do Alt+Tab, replace all of the above with:</span><br><span class="line">; LCtrl::Alt</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">; NEEDS &apos;*&apos; because LAlt key-repeat is otherwise interpreted as CTRL+LAlt.</span><br><span class="line">*LAlt::</span><br><span class="line">    AltTabbed := false</span><br><span class="line">    Hotkey, *Tab, AltTab, On    ; Begin Alt+Tab (and release Ctrl) when we press Tab.</span><br><span class="line">    Send &#123;Ctrl Down&#125;            ; Press Ctrl (LAlt::Ctrl)</span><br><span class="line">    KeyWait, LAlt</span><br><span class="line">    if AltTabbed</span><br><span class="line">        Send &#123;Alt Up&#125;           ; Release Alt after Alt+Tabbing.</span><br><span class="line">    else</span><br><span class="line">        Send &#123;Ctrl Up&#125;          ; Release Ctrl (LAlt::Ctrl)</span><br><span class="line">    Hotkey, *Tab, AltTab, Off</span><br><span class="line">return</span><br><span class="line"></span><br><span class="line">AltTab:</span><br><span class="line">    if (!AltTabbed) &#123;</span><br><span class="line">        Send &#123;Ctrl Up&#125;          ; Release Ctrl now.</span><br><span class="line">        Send &#123;Alt Down&#125;         ; Press down Alt. (Keeps the Alt+Tab menu open.)</span><br><span class="line">        AltTabbed := true       ; Set a flag so we know to release Alt instead of Ctrl.</span><br><span class="line">    &#125;</span><br><span class="line">    Send &#123;Blind&#125;&#123;Tab&#125;           ; Press Tab without releasing any modifiers.</span><br><span class="line">return</span><br></pre></td></tr></table></figure></p>
+
+        
+      </div>
+
+      <div>
+        
+          
+
+        
+      </div>
+
+      <div>
+        
+          
+
+        
+      </div>
+
+      <div>
+        
+          
+
+        
+      </div>
+
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/ahk/" rel="tag"># ahk</a>
+            
+          </div>
+        
+
+        
+          
+        
+
+        
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2018/05/22/47_mac-sublime-csscomb无法运行/" rel="next" title="mac sublime-csscomb 无法运行">
+                  <i class="fa fa-chevron-left"></i> mac sublime-csscomb 无法运行
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2018/05/26/49_regedit_bat/" rel="prev" title="regedit">
+                  regedit <i class="fa fa-chevron-right"></i>
+                </a>
+              
+            </div>
+          </div>
+        
+
+        
+        
+      </footer>
+    </div>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments" style="display: none" zzn="zzn1">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Squirrel" />
+          <p class="site-author-name" itemprop="name">Squirrel</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">50</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">40</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Squirrel</span>
+</div>
+
+
+<div class="powered-by" style="display: none;" zzn="20">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info" style="display: none;" zzn="21">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/js/main.min.js"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

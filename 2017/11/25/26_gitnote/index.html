@@ -77,7 +77,7 @@
 <meta property="og:site_name" content="Squirrel blog">
 <meta property="og:description" content="1234git查看工作区的修改: git diffgit查看暂存区的修改: git diff --cachedgit丢弃工作的修改: git checkout -- [filename]git暂存区-&amp;gt;工作区: git reset [filename] 1git优化提交: http://www.ruanyifeng.com/blog/2015/08/git-use-process.html">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-15T09:31:08.651Z">
+<meta property="og:updated_time" content="2018-05-18T14:41:37.130Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gitnote">
 <meta name="twitter:description" content="1234git查看工作区的修改: git diffgit查看暂存区的修改: git diff --cachedgit丢弃工作的修改: git checkout -- [filename]git暂存区-&amp;gt;工作区: git reset [filename] 1git优化提交: http://www.ruanyifeng.com/blog/2015/08/git-use-process.html">
@@ -310,6 +310,54 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git优化提交: http://www.ruanyifeng.com/blog/2015/08/git-use-process.html</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git配置别名文件: cd ~/.gitconfig</span><br><span class="line">git简单log: git log --pretty=oneline</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase到第一个节点：git rebase -i --root</span><br></pre></td></tr></table></figure>
+<p>1.创建仓库</p>
+<p>2.设置贡献者信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;andy&quot;</span><br><span class="line">git config --global user.email &quot;ywzbhpa00@126.com&quot;</span><br><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+<p>3.添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git add demo1.html</span><br></pre></td></tr></table></figure>
+<p>4.比较</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git diff //工作区与暂存区</span><br><span class="line">git diff --cached //暂存区到版本区</span><br><span class="line">git diff --staged //暂存区到版本区</span><br><span class="line">git diff master //工作区与版本区</span><br></pre></td></tr></table></figure>
+<p>5.回到版本区</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- drag.js</span><br></pre></td></tr></table></figure>
+<p>6.删除</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rm text.txt 删除暂存区</span><br><span class="line">git rm -f test.txt 删除暂存区和工作区</span><br><span class="line">gir rm --cached test.txt 只删除暂存区文件，不删除工作区文件</span><br></pre></td></tr></table></figure>
+<p>7.提交至远程仓库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+<p>8.查看远端名称</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote</span><br></pre></td></tr></table></figure>
+<p>9.远端拉取代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git pull //自动合并</span><br><span class="line">git diff master origin/master</span><br></pre></td></tr></table></figure>
+<p>10.多人协作解决冲突</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git fetch</span><br><span class="line">git diff master origin/master</span><br><span class="line">git merge origin/master</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+<p>11.参与开源项目的协作开发</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fork</span><br><span class="line">pull request</span><br></pre></td></tr></table></figure>
+<p>12.分支操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">git branch new1 //创建分支</span><br><span class="line">git checkout new1 //切换分支</span><br><span class="line">git checkout -b new2 //创建分支new2，然后切换到分支new2</span><br><span class="line">git merge new1 //合并new1分支到master上</span><br><span class="line">git branch --merged</span><br><span class="line">git branch --no-merged</span><br><span class="line">git branch -d new1 //删除new1分支</span><br><span class="line">git branch -D new2 //强制删除new2分支</span><br><span class="line">git checkout -b dev origin/dev </span><br><span class="line">git branch -a //查看所有分支</span><br><span class="line">git checkout -b serverfix origin/serverfix //添加分支serverfix</span><br><span class="line">git push origin :serverfix //删除服务器上的分支</span><br></pre></td></tr></table></figure>
+<p>13.发布版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag v1.0</span><br></pre></td></tr></table></figure>
+<p>14.恢复</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git checkout commitId drag.js //恢复文件</span><br><span class="line">git reset --hard commitId //恢复版本</span><br><span class="line">git reset --hard HEAD^ //往回走一个版本</span><br><span class="line">git reset --hard HEAD~2 //往回走两个版本</span><br></pre></td></tr></table></figure>
+<p>15.取消</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 修改最后一次提交</span><br><span class="line">$ git commit -m &apos;initial commit&apos;</span><br><span class="line">$ git add forgotten_file</span><br><span class="line">$ git commit --amend</span><br><span class="line"></span><br><span class="line">$ git commit --amend</span><br><span class="line"></span><br><span class="line">//取消暂存</span><br><span class="line">git reset HEAD test4.txt</span><br></pre></td></tr></table></figure>
+<p>16.添加新的远程仓库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add jq https://github.com/jquery/jquery.git</span><br></pre></td></tr></table></figure>
+<p>17.添加含注释的标签</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git tag -a v1.4 -m &apos;my version 1.4&apos;</span><br><span class="line">git tag -a v1.2 9fceb02</span><br></pre></td></tr></table></figure>
+<p>18.查看日志</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log origin/featureA ^featureA</span><br></pre></td></tr></table></figure>
+<p>19.分支衍合</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git checkout mywork //切换分支</span><br><span class="line">git rebase origin //把自己的节点加到origin分支上</span><br><span class="line">git rebase --abort //终止衍合</span><br></pre></td></tr></table></figure>
+<p>20.合并单个节点</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git cherry-pick commitId</span><br></pre></td></tr></table></figure>
+<p>21.单结节提交</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git cherry-pick --no-commit d0的哈希 d1的哈希 d2的哈希</span><br><span class="line">git commit -m&quot;merged commit&quot;</span><br><span class="line"></span><br><span class="line">上面3行相当于：git merge d2 --squash</span><br><span class="line"></span><br><span class="line">git checkout master</span><br><span class="line">git rebase --onto master d1 d2</span><br><span class="line">正好是你需要的, 意思是把 d1-d2 这一段嫁接到master上.</span><br><span class="line">m0 --m1 -- d2&apos;</span><br><span class="line">　　　\</span><br><span class="line">　　　　d0 -- d1 -- d2</span><br></pre></td></tr></table></figure>
+<p>24.显示本地与远程分支需要commit</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log origin/master..HEAD</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br><span class="line">git stash apply stash@&#123;2&#125;</span><br><span class="line">git stash pop</span><br></pre></td></tr></table></figure>
+<p>25.git修改前几次的记录</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git rebase HEAD~3</span><br><span class="line">编辑edit</span><br><span class="line">git commit --amend</span><br><span class="line">git rebase --continue</span><br></pre></td></tr></table></figure>
+<p>26.修改提交仓库地址<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin github:bradyt/basic-computing-notes.git</span><br></pre></td></tr></table></figure></p>
+<p>27.github使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:GreenMashimaro/webpack_demo.git</span><br></pre></td></tr></table></figure></p>
 
         
       </div>
@@ -428,7 +476,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">46</span>
+                <span class="site-state-item-count">50</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -441,7 +489,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">36</span>
+                <span class="site-state-item-count">40</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
