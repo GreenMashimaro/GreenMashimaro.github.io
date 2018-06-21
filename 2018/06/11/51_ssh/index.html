@@ -69,18 +69,18 @@
 
 
 
-<meta name="description" content="1https://gist.github.com/bsara/5c4d90db3016814a3d2fe38d314f9c23">
+<meta name="description" content="1https://gist.github.com/bsara/5c4d90db3016814a3d2fe38d314f9c23 .profile123456789101112131415161718192021env=~/.ssh/agent.envagent_load_env () &amp;#123; test -f &amp;quot;$env&amp;quot; &amp;amp;&amp;amp; . &amp;quot;$env&amp;q">
 <meta name="keywords" content="ssh git github">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ssh">
 <meta property="og:url" content="http://yoursite.com/2018/06/11/51_ssh/index.html">
 <meta property="og:site_name" content="Squirrel blog">
-<meta property="og:description" content="1https://gist.github.com/bsara/5c4d90db3016814a3d2fe38d314f9c23">
+<meta property="og:description" content="1https://gist.github.com/bsara/5c4d90db3016814a3d2fe38d314f9c23 .profile123456789101112131415161718192021env=~/.ssh/agent.envagent_load_env () &amp;#123; test -f &amp;quot;$env&amp;quot; &amp;amp;&amp;amp; . &amp;quot;$env&amp;q">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-21T08:05:17.039Z">
+<meta property="og:updated_time" content="2018-06-21T08:08:52.610Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ssh">
-<meta name="twitter:description" content="1https://gist.github.com/bsara/5c4d90db3016814a3d2fe38d314f9c23">
+<meta name="twitter:description" content="1https://gist.github.com/bsara/5c4d90db3016814a3d2fe38d314f9c23 .profile123456789101112131415161718192021env=~/.ssh/agent.envagent_load_env () &amp;#123; test -f &amp;quot;$env&amp;quot; &amp;amp;&amp;amp; . &amp;quot;$env&amp;q">
 
 
 
@@ -307,6 +307,7 @@
 
         
           <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://gist.github.com/bsara/5c4d90db3016814a3d2fe38d314f9c23</span><br></pre></td></tr></table></figure>
+<h3 id="profile"><a href="#profile" class="headerlink" title=".profile"></a>.profile</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">env=~/.ssh/agent.env</span><br><span class="line"></span><br><span class="line">agent_load_env () &#123; test -f &quot;$env&quot; &amp;&amp; . &quot;$env&quot; &gt;| /dev/null ; &#125;</span><br><span class="line"></span><br><span class="line">agent_start () &#123;</span><br><span class="line">    (umask 077; ssh-agent &gt;| &quot;$env&quot;)</span><br><span class="line">    . &quot;$env&quot; &gt;| /dev/null ; &#125;</span><br><span class="line"></span><br><span class="line">agent_load_env</span><br><span class="line"></span><br><span class="line"># agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2= agent not running</span><br><span class="line">agent_run_state=$(ssh-add -l &gt;| /dev/null 2&gt;&amp;1; echo $?)</span><br><span class="line"></span><br><span class="line">if [ ! &quot;$SSH_AUTH_SOCK&quot; ] || [ $agent_run_state = 2 ]; then</span><br><span class="line">    agent_start</span><br><span class="line">    ssh-add ~/.ssh/git_rsa</span><br><span class="line">elif [ &quot;$SSH_AUTH_SOCK&quot; ] &amp;&amp; [ $agent_run_state = 1 ]; then</span><br><span class="line">    ssh-add ~/.ssh/git_rsa</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line">unset env</span><br></pre></td></tr></table></figure>
 
         
       </div>
@@ -409,8 +410,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -463,6 +473,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#profile"><span class="nav-number">1.</span> <span class="nav-text">.profile</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
